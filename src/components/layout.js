@@ -30,9 +30,14 @@ export default ({ children }) => {
           font-style: normal;
         `}
       >
+        <Link to={`/`}
+        css={css`
+          float: right;
+        `}
+      >
         {data.site.siteMetadata.title}
+      </Link>
       </h3>
-      <br></br>
       <Link
         to={`/profiles/`}
         css={css`
@@ -41,6 +46,7 @@ export default ({ children }) => {
       >
         Meet the Team
       </Link>
+      <br></br>
       <Link to={`/`}
         css={css`
           float: right;

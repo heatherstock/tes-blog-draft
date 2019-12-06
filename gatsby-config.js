@@ -12,7 +12,7 @@ module.exports = {
         {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blogposts`,
+        name: `blogs`,
         path: `${__dirname}/src/all-posts/blog-posts`,
       },
     },
@@ -23,8 +23,8 @@ module.exports = {
         path: `${__dirname}/src/all-posts/profiles`,
       },
     },
-    `gatsby-plugin-emotion`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
